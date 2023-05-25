@@ -5,14 +5,36 @@
     <title>HTML</title>
     <style>
         body {
+            margin: 0px;
+            padding: 0px;
+            font-style: italic;
+            line-height: 15px;
             font-size: 16px;
         }
         h1 {
             font-family: sans-serif;
+            text-align: center;
         }
         p {
             font-weight: 600;
             font-size: 3em;
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        li {
+            padding: 15px 0px 15px 0px;
+            margin: 7px 0px 0px 0px;
+        }
+
+        #yellow {
+            background-color: yellow;
+        }
+        #red {
+            background-color: red;
+        }
+        #brown {
+            background-color: brown;
         }
     </style>
   </head>
@@ -20,9 +42,9 @@
     <h1>Cores</h1>
     <p>Qual é a sua cor favorita?</p>
     <ul>
-      <li>Amarelo</li>
-      <li>Vermelho</li>
-      <li>Marrom</li>
+      <li id="yellow">Amarelo</li>
+      <li id="red">Vermelho</li>
+      <li id="brown">Marrom</li>
     </ul>
   </body>
 </html>
