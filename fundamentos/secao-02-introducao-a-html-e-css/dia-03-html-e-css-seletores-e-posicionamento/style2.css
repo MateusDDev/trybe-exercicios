@@ -6,6 +6,9 @@
   
   .goomba {
     width: 100px;
+    position: absolute;
+    top: 410px;
+    left: 150px;
   }
   
   .baloon {
