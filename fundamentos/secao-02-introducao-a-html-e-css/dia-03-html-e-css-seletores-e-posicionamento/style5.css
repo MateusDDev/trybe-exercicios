@@ -1,7 +1,14 @@
-li:nth-child(odd) {
+ol li:nth-child(odd) {
     background-color: yellow;
     text-transform: uppercase;
 }
-li:nth-child(even) {
+ol li:nth-child(even) {
     background-color: green;
+}
+h1, h2, h3{
+    color: red;
+}
+h1 em, h2 em, h3 em {
+    font-size: 40px;
+    border: 1px solid black;
 }
