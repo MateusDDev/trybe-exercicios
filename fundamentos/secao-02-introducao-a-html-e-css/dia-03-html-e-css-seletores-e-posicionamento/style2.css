@@ -1,5 +1,7 @@
 .super-mario {
     width: 200px;
+    position: absolute;
+    left: 110px;
   }
   
   .goomba {
@@ -7,11 +9,12 @@
   }
   
   .baloon {
-  
+
   }
   
   .speach {
     font-size: 25px;
+
   }
   
   .bowser {
