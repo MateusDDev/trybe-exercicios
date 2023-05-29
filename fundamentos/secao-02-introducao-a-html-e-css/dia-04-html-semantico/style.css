@@ -1,5 +1,22 @@
+* {  
+    list-style: none;
+}
+
+body {
+    text-align: center;
+}
+
 h1 {
     text-align: center;
+}
+
+#align-equipes {
+    display: flex;
+    justify-content: center;
+}
+
+.equipes ul li {
+    display: inline-block;
 }
 
 .first {
