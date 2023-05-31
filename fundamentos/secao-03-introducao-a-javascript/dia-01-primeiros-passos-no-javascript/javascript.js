@@ -1,7 +1,8 @@
 let num1 = 18;
 let num2 = 25;
 let num3 = 32;
-triangulo = false;
+let triangulo = false;
+let chessPiece = 'Torre';
 
 //Exercício 1
 /*
@@ -36,6 +37,7 @@ if(num1 > num2 && num1 > num3){
 */
 
 //Exercício 4
+/*
 if(num1 + num2 + num3 === 180){
     triangulo = true;
     console.log('É um triângulo');
@@ -44,4 +46,29 @@ if(num1 + num2 + num3 === 180){
 }else {
     triangulo = false;
     console.log('Não é um triângulo');
+}
+*/
+
+//Exercício 5
+switch (chessPiece.toLowerCase()) {
+    case 'peao':
+        console.log('Anda casa para frente, duas casas na primeira jogada');
+        break;
+    case 'bispo':
+        console.log('Anda em diagonal');
+        break;
+    case 'cavalo':
+        console.log('Anda em L');
+        break;
+    case 'torre':
+        console.log('Anda em direções retas');
+        break;
+    case 'rainha':
+        console.log('Anda em todas as direções menos em L');
+        break;
+    case 'rei':
+        console.log('Anda apenas uma casa ao seu redor');
+    default:
+        console.log('Peça não existe');
+        break;
 }
