@@ -1,8 +1,9 @@
 let num1 = 18;
 let num2 = 25;
-let num3 = 32;
+let num3 = 28;
 let triangulo = false;
 let chessPiece = 'Torre';
+let par = false;
 
 //Exercício 1
 /*
@@ -50,6 +51,7 @@ if(num1 + num2 + num3 === 180){
 */
 
 //Exercício 5
+/*
 switch (chessPiece.toLowerCase()) {
     case 'peao':
         console.log('Anda casa para frente, duas casas na primeira jogada');
@@ -71,4 +73,14 @@ switch (chessPiece.toLowerCase()) {
     default:
         console.log('Peça não existe');
         break;
+}
+*/
+
+//Exercício 6
+if(num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0){
+    par = true;
+    console.log('Um dos números é par');
+}else {
+    par = false;
+    console.log('Nenhum número é par');
 }
