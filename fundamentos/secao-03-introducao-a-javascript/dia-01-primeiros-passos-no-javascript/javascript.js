@@ -4,6 +4,7 @@ let num3 = 28;
 let triangulo = false;
 let chessPiece = 'Torre';
 let par = false;
+let salario = 5000;
 
 //Exercício 1
 /*
@@ -77,6 +78,7 @@ switch (chessPiece.toLowerCase()) {
 */
 
 //Exercício 6
+/*
 if(num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0){
     par = true;
     console.log('Um dos números é par');
@@ -84,3 +86,33 @@ if(num1 % 2 === 0 || num2 % 2 === 0 || num3 % 2 === 0){
     par = false;
     console.log('Nenhum número é par');
 }
+*/
+
+//Exercício 7
+console.log(salario);
+if(salario <= 1556.94){
+    salario -= ((salario * 8) / 100);
+}else if(salario > 1556.94 && salario <= 2594.92){
+    salario -= ((salario * 9) / 100);
+}else if(salario > 2594.92 && salario <= 5189.82){
+    salario -= ((salario * 11) / 100);
+}else if(salario > 5189.82) {
+    salario -= 570.88;
+}
+console.log(salario);
+
+if(salario <= 1903.98){
+    salario = salario;
+}else if(salario > 1903.98 && salario <= 2826.65){
+    salario -= ((salario * 7.5) / 100) - 142.80;
+}else if(salario > 2826.65 && salario <= 3751.05){
+    salario -= ((salario * 15) / 100) - 354.80;
+}else if(salario > 3751.05 && salario <= 4664.68){
+    salario -= ((salario * 22.5) / 100) - 636.13;
+}else if(salario > 4664.68){
+    salario -= ((salario * 27.5) / 100) - 869.36;
+}else{
+    console.log('Insento de IR');
+}
+
+console.log(salario);
