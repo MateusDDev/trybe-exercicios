@@ -3,6 +3,7 @@ let soma = 0;
 let media = 0;
 let maiorNumero = 0;
 let numerosImpares = [];
+let fatorial = 0;
 
 for (let i = 0; i < numbers.length; i += 1) {
     console.log(numbers[i]);
@@ -38,3 +39,10 @@ console.log(maiorNumero);
 
 console.log('__________________________');
 console.log(numerosImpares);
+
+console.log('__________________________');
+for (let i = 10; i > 0; i -= 1) {
+    console.log(`10! = 10 x ${i} = ${10 * i}`);
+    fatorial += 10 * i;
+}
+console.log(`10! = ${fatorial}`);
