@@ -33,29 +33,30 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 
 ##### Seção 4: JavaScript: DOM, Eventos e Web Storage
 
+- [ ] Dia 01: _JavaScript - DOM e seletores_
+- [ ] Dia 02: _JavaScript - Trabalhando com elementos_
+- [ ] Dia 03: _JavaScript - Eventos_
+- [ ] Dia 04: _JavaScript - Web Storage_
+- [ ] Dia 05: _Projeto - Arte com Pixels_
+
+##### Seção 5: HTML e CSS: Forms, Flexbox e Responsivo
+
+- [ ] Dia 01: _HTML & CSS - Forms_
+- [ ] Dia 02: _Bibliotecas JavaScript e Frameworks CSS_
+- [ ] Dia 03: _CSS Flexbox - Parte 1_
+- [ ] Dia 04: _CSS Flexbox - Parte 2_
+- [ ] Dia 05: _Responsividade_
+- [ ] Dia 06: _Projeto - Trybewarts_
+
+##### Seção 6: Introdução à JavaScript ES6 e Testes Unitários
+
 - [ ] Dia 01: _ _
 - [ ] Dia 02: _ _
 - [ ] Dia 03: _ _
 - [ ] Dia 04: _ _
 - [ ] Dia 05: _ _
 
-##### Seção 5: Título
-
-- [ ] Dia 01: _ _
-- [ ] Dia 02: _ _
-- [ ] Dia 03: _ _
-- [ ] Dia 04: _ _
-- [ ] Dia 05: _ _
-
-##### Seção 6: Título
-
-- [ ] Dia 01: _ _
-- [ ] Dia 02: _ _
-- [ ] Dia 03: _ _
-- [ ] Dia 04: _ _
-- [ ] Dia 05: _ _
-
-##### Seção 7: Título
+##### Seção 7: Higher Order Functions do JavaScript ES6
 
 - [ ] Dia 01: _ _
 - [ ] Dia 02: _ _
