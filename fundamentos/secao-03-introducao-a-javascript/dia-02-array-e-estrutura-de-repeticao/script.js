@@ -82,6 +82,7 @@ for (let vertical = 0; vertical < n; vertical += 1) {
 */
 
 //Desafio dos Asteriscos
+/*
 let n = 5;
 let asteriscos = '';
 
@@ -92,4 +93,20 @@ for (let vertical = 0; vertical < n; vertical += 1) {
 for (let horizontal = 0; horizontal < n; horizontal += 1) {
     console.log(asteriscos);
 
+}
+*/
+
+// Pirâmide de Asteriscos invertida
+let n = 5;
+let asterisco = '';
+let space = [''];
+
+for (let inverted = 0; inverted < n + 1; inverted += 1) {  
+    space.push('');
+    
+}
+for (let index = n; index > 0; index -= 1) {
+    asterisco += '*';
+    space.pop();
+    console.log(`${space.join(' ')}${asterisco}`);
 }
