@@ -1,9 +1,10 @@
+//Primeiros exercicios
+/*
 const numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let soma = 0;
 let media = 0;
 let maiorNumero = 0;
 let numerosImpares = [];
-let fatorial = 0;
 
 for (let i = 0; i < numbers.length; i += 1) {
     console.log(numbers[i]);
@@ -39,6 +40,11 @@ console.log(maiorNumero);
 
 console.log('__________________________');
 console.log(numerosImpares);
+*/
+
+//Desafio Fatorial
+/*
+let fatorial = 0;
 
 console.log('__________________________');
 for (let i = 10; i > 0; i -= 1) {
@@ -46,3 +52,19 @@ for (let i = 10; i > 0; i -= 1) {
     fatorial += 10 * i;
 }
 console.log(`10! = ${fatorial}`);
+*/
+
+//Desafio Inverter Palavra
+/*
+let word = 'tryber';
+let invertedWord = '';
+
+//invertedWord = word.split('').reverse().join('');
+
+for (let index = word.length - 1; index >= 0; index -= 1) {
+    invertedWord += word[index];
+    
+}
+
+console.log(invertedWord);
+*/
