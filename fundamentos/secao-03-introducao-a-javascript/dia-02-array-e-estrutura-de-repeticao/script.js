@@ -68,3 +68,16 @@ for (let index = word.length - 1; index >= 0; index -= 1) {
 
 console.log(invertedWord);
 */
+
+//Desafio da pirâmide de Asteriscos
+/*
+let n = 5;
+let asteriscos = '';
+
+for (let vertical = 0; vertical < n; vertical += 1) {
+    asteriscos += '*';
+    console.log(asteriscos);
+    
+}
+*/
+
