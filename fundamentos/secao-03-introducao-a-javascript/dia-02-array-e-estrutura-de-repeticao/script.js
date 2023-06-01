@@ -81,3 +81,15 @@ for (let vertical = 0; vertical < n; vertical += 1) {
 }
 */
 
+//Desafio dos Asteriscos
+let n = 5;
+let asteriscos = '';
+
+for (let vertical = 0; vertical < n; vertical += 1) {
+    asteriscos += '*';
+    
+}
+for (let horizontal = 0; horizontal < n; horizontal += 1) {
+    console.log(asteriscos);
+
+}
