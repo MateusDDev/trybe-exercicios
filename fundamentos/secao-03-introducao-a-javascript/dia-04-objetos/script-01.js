@@ -1,4 +1,3 @@
-//Exercício 1
 const reader = {
   name: 'Julia',
   lastName: 'Pessoa',
