@@ -54,7 +54,14 @@ const keyExist = (array, key) => {
     return false;
   }
 };
+keyExist(school.lessons, 'professor');
 
-console.log(keyExist(school.lessons, 'professor'));
-
-//console.log(Object.keys(school.lessons[1]));
+const mudarTurno = (objeto, course, value) => {
+  for (let index = 0; index < objeto.lessons.length; index += 1) {
+    if (objeto.lessons[index]['course'] === course) {
+      objeto.lessons[index].shift = value;
+    }
+  }
+};
+mudarTurno(school, 'Python', 'Noite');
+console.log(school.lessons);
