@@ -57,7 +57,63 @@
   </head>
   <body>
     <script>
-      
+     let getBody = document.querySelector('body');
+     let addH1 = document.createElement('h1');
+     let addMain = document.createElement('main');
+     let addSection = document.createElement('section');
+     let addSection2 = document.createElement('section');
+     let addSection3 = document.createElement('section');
+     let addP = document.createElement('p');
+     let addImage = document.createElement('img');
+     let addUl = document.createElement('ul');
+     let numbersList = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito'];
+
+     addH1.innerText = 'TrybeTrip - Agência de Viagens';
+     addH1.className = 'title';
+     getBody.appendChild(addH1);
+
+     addMain.className = 'main-content';
+     addMain.style.backgroundColor = 'purple';
+     getBody.appendChild(addMain);
+     let getMain = document.querySelector('main');
+     
+     addSection.className = 'center-content';
+     getMain.appendChild(addSection);
+     let getSection = document.querySelector('section');
+
+     addP.innerText = 'Conteúdo muito criativo';
+     getSection.appendChild(addP);
+
+     addSection2.className = 'left-content';
+     getMain.appendChild(addSection2);
+     let getSection2 = document.querySelector('.left-content');
+
+     addSection3.className = 'right-content';
+     addSection3.style.marginRight = 'auto';
+     getMain.appendChild(addSection3);
+     let getSection3 = document.querySelector('.right-content');
+
+     addImage.src = 'https://picsum.photos/200';
+     addImage.className = 'small-image';
+     getSection2.appendChild(addImage);
+
+     getSection3.appendChild(addUl);
+     let getUl = document.querySelector('ul');
+
+     for (let index = 0; index < numbersList.length; index += 1) { 
+      let addLi = document.createElement('li');
+      addLi.innerText = numbersList[index];
+      getUl.appendChild(addLi);
+     }
+
+    for (let index = 0; index < 3; index += 1) {
+     let addH3 = document.createElement('h3');
+     addH3.innerText = 'Título h3';
+     addH3.className = 'description';
+     getMain.appendChild(addH3);
+    }
+
+    getMain.removeChild(getSection2);
     </script>
   </body>
 </html>
