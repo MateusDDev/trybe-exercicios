@@ -42,6 +42,7 @@ window.onload = () => {
    backgroundColorButtons[index].addEventListener("click", (event) => {
     localStorage.setItem('backgroundColorButtons', event.target.innerHTML)
    })
+   setBackgroundColor(localStorage.backgroundColorButtons)
  }
 
  // Cor do texto;
@@ -54,6 +55,7 @@ window.onload = () => {
    fontColorButtons[index].addEventListener("click", (event) => {
     localStorage.setItem('fontColorButtons', event.target.innerHTML)
    })
+   setFontColor(localStorage.fontColorButtons)
  }
 
  // Tamanho da fonte
@@ -66,6 +68,7 @@ window.onload = () => {
    fontSizeButtons[index].addEventListener("click", (event) => {
     localStorage.setItem('fontSizeButtons', event.target.innerHTML)
    })
+   setFontSize(localStorage.fontSizeButtons)
  }
 
  // Espaçamento entre as linhas do texto;
@@ -78,6 +81,7 @@ window.onload = () => {
    lineHeightButtons[index].addEventListener("click", (event) => {
     localStorage.setItem('lineHeightButtons', event.target.innerHTML)
    })
+   setLineHeight(localStorage.lineHeightButtons)
  }
 
  // Tipo da fonte (_Font family_).
@@ -90,5 +94,6 @@ window.onload = () => {
    fontFamilyButtons[index].addEventListener("click", (event) => {
     localStorage.setItem('fontFamilyButtons', event.target.innerHTML)
    })
+   setFontFamily(localStorage.fontFamilyButtons)
  }
 }
