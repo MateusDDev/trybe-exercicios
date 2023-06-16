@@ -63,6 +63,9 @@ window.onload = () => {
      setFontSize(event.target.innerHTML)
    })
 
+   fontSizeButtons[index].addEventListener("click", (event) => {
+    localStorage.setItem('fontSizeButtons', event.target.innerHTML)
+   })
  }
 
  // Espaçamento entre as linhas do texto;
