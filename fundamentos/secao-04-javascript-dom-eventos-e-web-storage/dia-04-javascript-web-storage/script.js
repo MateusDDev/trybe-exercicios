@@ -38,9 +38,9 @@ window.onload = () => {
    backgroundColorButtons[index].addEventListener("click", (event) => {
      setBackgroundColor(event.target.innerHTML)
    })
-   // Requisito 1
+   
    backgroundColorButtons[index].addEventListener("click", (event) => {
-    localStorage.setItem('backgroundColor', event.target.innerHTML)
+    localStorage.setItem('backgroundColorButtons', event.target.innerHTML)
    })
  }
 
@@ -51,6 +51,9 @@ window.onload = () => {
      setFontColor(event.target.innerHTML)
    })
    
+   fontColorButtons[index].addEventListener("click", (event) => {
+    localStorage.setItem('fontColorButtons', event.target.innerHTML)
+   })
  }
 
  // Tamanho da fonte
@@ -59,6 +62,7 @@ window.onload = () => {
    fontSizeButtons[index].addEventListener("click", (event) => {
      setFontSize(event.target.innerHTML)
    })
+
  }
 
  // Espaçamento entre as linhas do texto;
