@@ -86,5 +86,9 @@ window.onload = () => {
    fontFamilyButtons[index].addEventListener("click", (event) => {
      setFontFamily(event.target.innerHTML)
    })
+
+   fontFamilyButtons[index].addEventListener("click", (event) => {
+    localStorage.setItem('fontFamilyButtons', event.target.innerHTML)
+   })
  }
 }
