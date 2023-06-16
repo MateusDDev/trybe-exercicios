@@ -74,6 +74,10 @@ window.onload = () => {
    lineHeightButtons[index].addEventListener("click", (event) => {
      setLineHeight(event.target.innerHTML)
    })
+
+   lineHeightButtons[index].addEventListener("click", (event) => {
+    localStorage.setItem('lineHeightButtons', event.target.innerHTML)
+   })
  }
 
  // Tipo da fonte (_Font family_).
