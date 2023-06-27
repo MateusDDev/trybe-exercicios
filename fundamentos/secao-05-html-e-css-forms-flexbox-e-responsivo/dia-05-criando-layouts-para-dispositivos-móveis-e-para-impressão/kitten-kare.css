@@ -82,7 +82,33 @@ body {
 }
 
 @media print {
-  #header, #navigation, #footer {
+  #header, 
+  #navigation, 
+  #footer {
     display: none;
+  }
+  #content-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    padding: 0;
+  }
+  #aside {
+    display: none;
+  }
+  img {
+    max-width: 100%;
+  }
+  #navigation ul {
+    flex-direction: column;
+    margin-top: 75px;
+  }
+  #header {
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
 }
