@@ -35,13 +35,17 @@ img {
 
 main {
   text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
 }
 
 section {
-  border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
-  gap: 7px;
+  justify-content: center;
+  width: 50%;
+  gap: 15px;
 }
 
 figure {
