@@ -96,8 +96,26 @@ const clients = [
 ];
 
 const findPersonByName = (name) => {
-  // seu código aqui
-};
+  let result;
+  try {
+    for (let index = 0; index < clients.length; index += 1) {
+      currentClient = clients[index];
+      if (currentClient.name === name) {
+        result = currentClient;
+      }
+    }
+    if (!result) {
+      throw new Error('Pessoa não encontrada, tente novamente');
+    }
+    const destinatary = `Destinatário ${result.name}.`;
+    const fullAddress = `Endereço: ${result.address.street}, ${result.address.number}, ${result.address.neighborhood}, ${result.address.city} - ${result.address.state}`;
+    const cep = `CEP: ${result.address.cep}.`;
+    return `${destinatary} ${fullAddress} ${cep}`;
+  } catch (error) {
+    return error.message;
+  }
+}
+console.log(findPersonByName('Rafael Ferreira'));
 
 const findPersonByPosition = (position) => {
   // seu código aqui
