@@ -115,11 +115,24 @@ const findPersonByName = (name) => {
     return error.message;
   }
 }
-console.log(findPersonByName('Rafael Ferreira'));
+//console.log(findPersonByName('Rafael Ferreira'));
 
 const findPersonByPosition = (position) => {
-  // seu código aqui
+  try {
+    const currentClient = clients[position - 1];
+
+    if (!currentClient) {
+      throw new Error('Posição inválida, tente novamente');
+    }
+
+    const newString = `Cliente ${currentClient.name}. email: ${currentClient.email}`;
+
+    return newString;
+  } catch (error) {
+    return error.message;
+  }
 };
+console.log(findPersonByPosition(0));
 
 const findPeopleByState = (state) => {
   // seu código aqui
