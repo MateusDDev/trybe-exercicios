@@ -132,8 +132,23 @@ const findPersonByPosition = (position) => {
     return error.message;
   }
 };
-console.log(findPersonByPosition(0));
+//console.log(findPersonByPosition(0));
 
 const findPeopleByState = (state) => {
-  // seu código aqui
+  try {
+    const people = [];
+    for (let index = 0; index < clients.length; index += 1) {
+      const currentClient = clients[index];
+      if (currentClient.address.state === state) {
+        people.push(currentClient.name);
+      }
+    }
+    if (people.length <= 0) {
+      throw new Error('Ops, nenhuma pessoa mora nesse estado, tente outro');
+    }
+    return people;
+  } catch (error) {
+    return error.message;
+  }
 };
+console.log(findPeopleByState('SC'));
