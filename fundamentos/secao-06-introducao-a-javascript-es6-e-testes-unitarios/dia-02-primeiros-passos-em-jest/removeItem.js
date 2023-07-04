@@ -10,4 +10,4 @@ function removeItem(arr, item) {
   return newArr;
 }
 
-module export()
+module.exports = {removeItem};
