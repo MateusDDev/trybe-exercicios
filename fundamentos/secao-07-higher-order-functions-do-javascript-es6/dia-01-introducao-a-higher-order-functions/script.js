@@ -6,9 +6,9 @@ const fullEmail = (name) => {
 
 const newEmployees = () => {
   const employees = {
-    id1: fullEmail('Pedro Guerra'), // Nome: Pedro Guerra -> Chame sua função passando o nome Pedro Guerra como parâmetro, substituindo as aspas
-    id2: fullEmail('Luiza Drumond'), // Nome: Luiza Drumond -> Chame sua função passando o nome Luiza Drumond como parâmetro, substituindo as aspas
-    id3: fullEmail('Carla Paiva'), // Nome: Carla Paiva -> Chame sua função passando o nome Carla Paiva como parâmetro, substituindo as aspas
+    id1: fullEmail('Pedro Guerra'),
+    id2: fullEmail('Luiza Drumond'),
+    id3: fullEmail('Carla Paiva'),
   }
   return employees;
 };
