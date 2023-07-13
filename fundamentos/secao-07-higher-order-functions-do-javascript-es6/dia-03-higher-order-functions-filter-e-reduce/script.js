@@ -66,7 +66,12 @@ const countries = [
   }
 ];
 
-const populationFunction = () => {
+const countriesPopulation = () => {
   const red = countries.reduce((acc, country) => acc + country.population, 0);
+  return red;
+};
+
+const countriesArea = () => {
+  const red = countries.reduce((acc, country) => acc + country.area, 0);
   return red;
 };
