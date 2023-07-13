@@ -80,3 +80,17 @@ const longestName = () => {
   const red = countries.reduce((acc, country) => acc.name.length < country.name.length ? country : acc);
   return red;
 };
+
+const names = [
+  'Aanemarie', 'Adervandes', 'Akifusa',
+  'Abegildo', 'Adicellia', 'Aladonata',
+  'Abeladerco', 'Adieidy', 'Alarucha',
+];
+
+const letterArray = names.join('').toLowerCase().split('');
+const countA = () => {
+  const red = letterArray.reduce((acc, letter) => letter === 'a' ? acc + 1 : acc, 0);
+  return red;
+}
+
+console.log(countA());
